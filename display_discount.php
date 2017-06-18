@@ -28,13 +28,13 @@
         <h1>This page is under construction</h1>
 
         <label>Product Description:</label>
-        <span><?php echo $product_description; ?></span><br>
+        <span><?php echo htmlspecialchars($product_description); ?></span><br>
 
         <label>List Price:</label>
-        <span><?php echo formatPrice($list_price); ?></span><br>
+        <span><?php echo htmlspecialchars(formatPrice($list_pricei)); ?></span><br>
 
         <label>Standard Discount:</label>
-        <span><?php echo formatPercent($discount_percent); ?></span><br>
+        <span><?php echo htmlspecialchars(formatPercent($discount_percent)); ?></span><br>
 
         <label>Discount Amount:</label>
         <span><?php echo formatPrice($discount_amount); ?></span><br>
